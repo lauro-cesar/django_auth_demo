@@ -1,0 +1,13 @@
+
+
+upstream backend-http {
+    server ${DJANGO_HOST}:${HTTP_PORT};
+}
+
+upstream mobile-auth {
+    server ${DJANGO_HOST}:${MOBILE_AUTH_PORT};
+}
+
+upstream backend-ws {
+    server ${DJANGO_HOST}:${WS_PORT};
+}
